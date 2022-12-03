@@ -13,6 +13,8 @@
     @extend .text-white;
     @extend .text-decoration-none;
     @extend .fs-4;
+
+    cursor: pointer;
   }
 
   &__aside {
