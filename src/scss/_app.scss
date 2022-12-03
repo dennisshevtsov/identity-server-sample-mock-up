@@ -26,6 +26,8 @@
   }
 
   &__content {
+    @extend .p-3;
+
     width: 100%;
   }
 }
