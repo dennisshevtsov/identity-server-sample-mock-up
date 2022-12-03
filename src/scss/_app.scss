@@ -1,43 +1,28 @@
-$app-background-color: #c4c4c4;
-
-$header-height: 4em;
-$header-background-color: #2e2e2e;
-
-$aside-top: $header-height;
-$aside-width: 16em;
-$aside-border-color: #c4c4c4;
-$aside-border-width: 1px;
-
-$main-padding-left: $aside-width;
-
 .app {
-  width: 100%;
-  min-height: 100%;
-  background: $app-background-color;
+  @extend .d-flex;
+  @extend .flex-nowrap;
 
-  &__header {
-    background: $header-background-color;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: $header-height;
-    z-index: 1000;
+  height: 100vh;
+
+  &__brand {
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .mb-3;
+    @extend .mb-md-0;
+    @extend .me-md-auto;
+    @extend .text-white;
+    @extend .text-decoration-none;
+    @extend .fs-4;
   }
 
   &__aside {
-    position: fixed;
-    top: $aside-top;
-    right: 0;
-    left: 0;
-    width: $aside-width;
-    height: 100%;
-    border-right: $aside-border-color $aside-border-width solid;
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .flex-shrink-0;
+    @extend .p-3;
+    @extend .text-bg-dark;
   }
 
-  &__main {
-    position: relative;
-    padding: 0 0 0 $main-padding-left;
-    overflow: hidden;
+  &__content {
   }
 }

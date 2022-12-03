@@ -1,0 +1,19 @@
+$app-menu-font-color: #2e2e2e;
+$app-menu-background-color-hover: #c4c4c4;
+
+.app-menu {
+  @extend .nav;
+  @extend .nav-pills;
+  @extend .flex-column;
+  @extend .mb-auto;
+
+  &__item {
+    @extend .nav-item;
+    @extend .nav-link;
+    @extend .text-white;
+
+    &_active {
+      @extend .active;
+    }
+  }
+}

@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>IdentityServer Sample</title>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
   <div class="app">
-    <header class="app__header header">
-      <a class="header__brand"><span>IdentityServer Sample App</span></a>
-    </header>
-
-    <aside class="app__aside">
-      <nav class="aside-menu">
-        <a class="aside-menu__item"><span>Dashboard</span></a>
-        <a class="aside-menu__item"><span>Tasks</span></a>
+    <div class="app__aside">
+      <a class="app__brand"><span>IdentityServer Sample</span></a>
+      <hr />
+      <nav class="app-menu">
+        <a class="app-menu__item app-menu__item_active"><span>Dashboard</span></a>
+        <a class="app-menu__item"><span>Tasks</span></a>
       </nav>
-    </aside>
+    </div>
 
-    <main class="app__main"></main>
+    <main class="app__content"></main>
   </div>
+  <!-- <main class="d-flex flex-nowrap" style="height: 100vh;">
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark">test</div>
+  </main> -->
 </body>
 </html>
