@@ -1,0 +1,1 @@
+# identity-server-sample-mock-up
