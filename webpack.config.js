@@ -24,6 +24,7 @@ module.exports = {
   plugins: [
     new html({
       title: 'IdentityServer Sample',
+      template: './src/index.html',
     }),
   ]
 };
