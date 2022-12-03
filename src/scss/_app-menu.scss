@@ -12,6 +12,8 @@ $app-menu-background-color-hover: #c4c4c4;
     @extend .nav-link;
     @extend .text-white;
 
+    cursor: pointer;
+
     &_active {
       @extend .active;
     }
