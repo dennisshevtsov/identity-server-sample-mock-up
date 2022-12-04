@@ -1,32 +1,20 @@
 .app {
-  @extend .d-flex;
-  @extend .flex-nowrap;
-
-  height: 100vh;
+  &__header {
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+    @extend .navbar-dark;
+    @extend .bg-dark;
+  }
 
   &__brand {
-    @extend .d-flex;
-    @extend .align-items-center;
-    @extend .mb-3;
-    @extend .mb-md-0;
-    @extend .me-md-auto;
-    @extend .text-white;
-    @extend .text-decoration-none;
-    @extend .fs-4;
+    @extend .navbar-brand;
 
     cursor: pointer;
   }
 
-  &__aside {
-    @extend .d-flex;
-    @extend .flex-column;
-    @extend .flex-shrink-0;
-    @extend .p-3;
-    @extend .text-bg-dark;
-  }
-
   &__content {
-    @extend .p-3;
+    @extend .container-xl;
+    @extend .pt-3;
 
     width: 100%;
   }

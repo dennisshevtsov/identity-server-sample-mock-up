@@ -1,13 +1,9 @@
 .app-menu {
-  @extend .nav;
-  @extend .nav-pills;
-  @extend .flex-column;
-  @extend .mb-auto;
+  @extend .navbar-nav;
 
   &__item {
     @extend .nav-item;
     @extend .nav-link;
-    @extend .text-white;
 
     cursor: pointer;
 
